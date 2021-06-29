@@ -29,6 +29,7 @@ public:
     std::shared_ptr<Node> search(Point target) override;
     std::vector<Point> range(Rectangle region) override;
     Point nearest_neighbor(Point reference_point) override;
+    void range (Rectangle region, std::shared_ptr<Node>& node,std::vector<Point> &result);
 };
 
 } //spatial
